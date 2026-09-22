@@ -2,11 +2,11 @@
     <h1>Форма для заполнения</h1>
         <label>
             Фамилия Имя Отчество:<br>
-            <input name="field-FIO" placeholder="Введите ФИО">
+            <input name="field-FIO" placeholder="Введите ФИО" type="text" pattern="^[А-Яа-яЁё\-]+\s+[А-Яа-яЁё\-]+(?:\s+[А-Яа-яЁё\-]+)?$" required>
         </label><br>
         <label>
             Мобильный телефон:<br>
-            <input name="field-telephone" type="tel" placeholder="Введите ваш номер">
+            <input name="field-telephone" type="tel" placeholder="Введите ваш номер" pattern="\+7[0-9]{10}" required>
         </label><br>
         <label>
             Текстовое поле email:<br>
@@ -41,7 +41,7 @@
       </label><br>
 
         Биография:<br>
-        <textarea name="field-name-2">начальное значение</textarea>
+        <textarea name="field-name-2" required>начальное значение</textarea>
       </label>
       <br>     
 
